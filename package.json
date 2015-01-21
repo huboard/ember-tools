@@ -20,9 +20,10 @@
     "ember-template-compiler": "1.3.0"
   },
   "devDependencies": {
+    "ember-template-compiler": "^1.3.0",
     "mocha": "*",
-    "should": "*",
     "rimraf": "*",
+    "should": "*",
     "testem": "*"
   },
   "scripts": {
