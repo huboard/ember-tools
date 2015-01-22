@@ -16,8 +16,8 @@ module.exports = function(source, savePath, callback) {
 
 function compile(templates, callback) {
   templates.forEach(function(template) {
-    var fn = precompile(template.content);
-    template.src = fn.toString();
+    var fn = precompile(template.content, false);
+    template.hb = 'Ember.Handlebars.template(' + fn + ');'
   });
   callback(templates);
 }
